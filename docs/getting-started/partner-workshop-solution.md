@@ -1,5 +1,5 @@
 ---
-title: 파트너 워크숍 솔루션
+title: 파트너 워크샵 솔루션
 description: 역할별 결과물을 공유 솔루션 패키지, 백로그, 아키텍처 뷰, 게시 준비 계획으로 통합
 sidebar_position: 10
 author: Microsoft
@@ -14,20 +14,17 @@ keywords:
 estimated_reading_time: 8
 ---
 
-## 워크숍 일정
+## 워크샵 일정
 
 | 단계 | 활동                                                                                       | 시간   |
-|------|---------------------------------------------------------------------------------------------|--------|
-| 1    | [워크숍 개요](partner-workshop.md)                                                           | 30분 |
-| 2    | [Codespaces 또는 로컬 VS Code 설정](partner-workshop-setup.md)                               | 30분 |
-| 3    | [계획, 비전, 경험, 아키텍처 설계, 백로그](partner-workshop-role-tracks.md)                    | 90분 |
-| 4    | [**검증 및 솔루션**](partner-workshop-solution.md)                                            | 30분 |
-| 5    | [Microsoft Marketplace 및 Copilot Agent Store 준비](partner-workshop-publishing.md)          | 60분 |
-| 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                             | 30분 |
-
-워크숍의 솔루션 단계에서 이 가이드를 사용하세요. 참가자는 역할별 결과물을
-한데 모으고, 공백과 추적성을 확인하며, 세션 이후에도 다듬을 수 있는 검토된
-핸드오프를 남겨야 합니다.
+|------|-------------------------------------------------------------------------------------------|-------|
+| 1    | [워크샵 개요](partner-workshop.md)                                                     | 30분 |
+| 2    | [로컬 VS Code 설정](partner-workshop-setup.md)                                            | 30분 |
+| 3    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
+| 3    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
+| 4    | [**검증 및 솔루션**](partner-workshop-solution.md)                                             | 30분 |
+| 5    | [Microsoft Marketplace 및 Copilot Agent Store 준비](partner-workshop-publishing.md)       | 60분 |
+| 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                            | 30분 |
 
 ## 목표
 
@@ -50,7 +47,7 @@ estimated_reading_time: 8
 8. 고위험 요구사항과 중요한 결정이 백로그 항목에 매핑되는지 확인하세요.
 9. 경험이 불확실성, 피드백, 접근 실패, 사람의 개입(에스컬레이션)을
    포착하는지 확인하세요.
-10. 게시 워크숍을 위해 미해결 게시 입력을 아키텍처 노트에 기록하세요.
+10. 게시 워크샵을 위해 미해결 게시 입력을 아키텍처 노트에 기록하세요.
 
 ## 추적성 검토
 
@@ -72,11 +69,11 @@ publish anything."
 
 1. `.copilot-tracking/details/` 아래에 매트릭스 초안을 기록하세요.
 2. 각 공백에 담당자를 지정하세요.
-3. 워크숍 증거로 해결할 수 있는 공백을 수정하세요.
+3. 워크샵 증거로 해결할 수 있는 공백을 수정하세요.
 4. 담당자와 함께 남은 게시 공백을 아키텍처 노트에 기록하세요.
 5. 책임 있는 사람이 검토할 때까지 생성된 콘텐츠를 초안으로 표시하세요.
 
-다음 워크숍에서는 이러한 게시 입력을 Microsoft Marketplace Coach에
+다음 워크샵에서는 이러한 게시 입력을 Microsoft Marketplace Coach에
 전달하며, 이 Coach는 `.copilot-tracking/plans/` 아래에 정식 Marketplace
 구현 계획을 만듭니다. 솔루션 검토 중에는 별도의 게시 준비 아티팩트를 만들지
 마세요.
@@ -96,7 +93,7 @@ publish anything."
 1. `.copilot-tracking/github-issues/` 아래의 백로그 계획을
    시스템 중립적인 백로그로 유지하세요.
 2. 대상 시스템, 담당자, 상태, 외부 ID를 위한 열을 추가하세요.
-3. 승인된 각 항목을 워크숍 이후에 가져오거나 생성할 담당자를 지정하세요.
+3. 승인된 각 항목을 워크샵 이후에 가져오거나 생성할 담당자를 지정하세요.
 
 ### 엔지니어: 아키텍처 검토
 

@@ -1,6 +1,6 @@
 ---
-title: 워크숍 성과 구현 및 검토
-description: 완료된 워크숍 아티팩트를 작업 저장소로 옮기고, 승인된 첫 번째 슬라이스를 구현한 후 HVE Core로 결과를 검토
+title: 워크샵 성과 구현 및 검토
+description: 완료된 워크샵 아티팩트를 작업 저장소로 옮기고, 승인된 첫 번째 슬라이스를 구현한 후 HVE Core로 결과를 검토
 author: Microsoft
 ms.date: 2026-10-31
 ms.topic: tutorial
@@ -18,18 +18,19 @@ sidebar_position: 5
 이 가이드를 사용하여 승인된 리서치와 계획을 구현 저장소로 핸드오프하고, 하나의
 증분 범위를 전달한 후, 원본 증거에 비추어 결과를 검토하세요.
 
-## 워크숍 일정
+## 워크샵 일정
 
 | 단계 | 활동                                                                                       | 시간   |
-|------|---------------------------------------------------------------------------------------------|--------|
-| 1    | [워크숍 개요](partner-workshop.md)                                                           | 30분 |
-| 2    | [Codespaces 또는 로컬 VS Code 설정](partner-workshop-setup.md)                               | 30분 |
-| 3    | [계획, 비전, 경험, 아키텍처 설계, 백로그](partner-workshop-role-tracks.md)                    | 90분 |
-| 4    | [검증 및 솔루션](partner-workshop-solution.md)                                                | 30분 |
-| 5    | [Microsoft Marketplace 및 Copilot Agent Store 준비](partner-workshop-publishing.md)          | 60분 |
-| 6    | [**구현 및 상용화로의 핸드오프**](partner-workshop-implementation.md)                         | 30분 |
+|------|-------------------------------------------------------------------------------------------|-------|
+| 1    | [워크샵 개요](partner-workshop.md)                                                     | 30분 |
+| 2    | [로컬 VS Code 설정](partner-workshop-setup.md)                                            | 30분 |
+| 3    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
+| 3    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
+| 4    | [검증 및 솔루션](partner-workshop-solution.md)                                             | 30분 |
+| 5    | [Microsoft Marketplace 및 Copilot Agent Store 준비](partner-workshop-publishing.md)       | 60분 |
+| 6    | [**구현 및 상용화로의 핸드오프**](partner-workshop-implementation.md)                            | 30분 |
 
-## 워크숍에서 솔루션 구현으로
+## 워크샵에서 솔루션 구현으로
 
 가장 간단한 설정은 구현 대상 프로젝트 저장소에 HVE Core VS Code 확장을
 설치하는 것입니다. 이 확장은 HVE 에이전트인 RPI Agent와 `/rpi`,
@@ -61,7 +62,7 @@ sidebar_position: 5
 
 ## 1A 단계: 새 프로젝트 시작
 
-워크숍 결과물이 새로운 애플리케이션이나 서비스가 될 때 이 경로를
+워크샵 결과물이 새로운 애플리케이션이나 서비스가 될 때 이 경로를
 사용하세요.
 
 1. 저장소를 만들고 VS Code에서 루트를 여세요.
@@ -69,7 +70,7 @@ sidebar_position: 5
    저장소로 복사하세요.
 3. HVE Core를 설치 또는 활성화하세요 ([HVE Core 설치하기](install.md)
    참고).
-4. 워크숍 결과물을 검토, 업데이트, 승인하세요.
+4. 워크샵 결과물을 검토, 업데이트, 승인하세요.
 
    * 검토된 아티팩트만 일치하는 `.copilot-tracking/` 폴더 아래 새
      저장소에 복사하세요(동일한 상대 하위 경로 유지):
@@ -128,14 +129,14 @@ implement deferred work or publication activities.
 
 ## 1B 단계: 기존 프로젝트에서 계속하기
 
-워크숍이 기존 제품에 기능을 추가하는 경우 이 경로를 사용하세요.
+워크샵이 기존 제품에 기능을 추가하는 경우 이 경로를 사용하세요.
 
 1. VS Code에서 현재 저장소를 여세요.
 2. Hypervelocity Innovation GitHub 에이전트와 스킬인 .github/*를
    저장소로 복사하세요.
 3. HVE Core를 설치 또는 활성화하세요 ([HVE Core 설치하기](install.md)
    참고).
-4. 워크숍 결과물을 검토, 업데이트, 승인하세요.
+4. 워크샵 결과물을 검토, 업데이트, 승인하세요.
 
    * 검토된 아티팩트만 일치하는 `.copilot-tracking/` 폴더 아래 새
      저장소에 복사하세요(동일한 상대 하위 경로 유지):
@@ -185,7 +186,7 @@ change and record implementation evidence under
 activities.
 ```
 
-워크숍이 다른 패턴을 제안했다는 이유만으로 동작하는 아키텍처를 교체하지
+워크샵이 다른 패턴을 제안했다는 이유만으로 동작하는 아키텍처를 교체하지
 마세요. 중대한 차이점은 기록하고, 범위, 요구사항, 종속성이 바뀌는 경우
 `/rpi-plan`으로 돌아가세요.
 
@@ -268,7 +269,7 @@ MVP 검토 후:
 
 1. 검증된 제품 동작으로 Marketplace와 Agent Store 준비 아티팩트를
    업데이트하세요.
-2. 워크숍 당시의 메모에 의존하지 말고 현재 Microsoft 가이드를
+2. 워크샵 당시의 메모에 의존하지 말고 현재 Microsoft 가이드를
    확인하세요.
 3. Partner Center와 테넌트 상태를 권위 있는 시스템에서 확인하세요.
 4. 패키지, 아이덴티티, 라우팅, 수명 주기, 보안, 개인정보 보호, 접근성,
@@ -315,7 +316,7 @@ MVP 구현, 테스트, 준비 상태 검증을 완료하면 팀은 다음과 같
   진행하며, 인증과 게시는 외부 검토와 승인의 대상으로 남습니다.
 * 출시 이후 반복과 공동 판매 활성화를 위한 후속 작업 항목이 식별됩니다.
 
-워크숍 아티팩트는 초기 증거 추적을 제공하고, 구현 저장소와 Partner
+워크샵 아티팩트는 초기 증거 추적을 제공하고, 구현 저장소와 Partner
 Center가 지속적인 엔지니어링과 상용화를 주도합니다.
 
 ### 솔루션 출시를 축하합니다!

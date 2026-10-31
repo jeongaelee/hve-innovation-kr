@@ -41,7 +41,7 @@ HVE Core는 전체 배포 아이덴티티의 에이전트, 지침(instructions),
 | 아키텍처 설계, 코드 리뷰, 표준 수립            | [Tech Lead](tech-lead.md)                               |
 | 보안 평가, 보안 모델 작성, 컴플라이언스 검토 | [Security Architect](security-architect.md)             |
 | 데이터 분석, 노트북 구축, 대시보드 생성           | [Data Scientist](data-scientist.md)                     |
-| DT 워크숍 진행, 사용자 경험 설계, 프로토타입 테스트 | [UX Designer](ux-designer.md)                           |
+| DT 워크샵 진행, 사용자 경험 설계, 프로토타입 테스트 | [UX Designer](ux-designer.md)                           |
 | 인프라 관리, 인시던트 처리, 배포            | [SRE / Operations](sre-operations.md)                   |
 | 비즈니스 성과 정의 또는 이해관계자 정렬 관리      | [Business Program Manager](business-program-manager.md) |
 | 프로젝트 기여 시작하기                       | [New Contributor](new-contributor.md)                   |

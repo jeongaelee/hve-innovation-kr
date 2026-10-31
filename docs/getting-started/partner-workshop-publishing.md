@@ -1,5 +1,5 @@
 ---
-title: 파트너 워크숍 게시 후속 작업
+title: 파트너 워크샵 게시 후속 작업
 description: Microsoft Marketplace와 Microsoft 365 Copilot Agent Store를 위한 게시 준비 상태와 제품 가격 책정 구성
 sidebar_position: 11
 author: Microsoft
@@ -16,26 +16,24 @@ keywords:
 estimated_reading_time: 16
 ---
 
-## 워크숍 일정
+## 워크샵 일정
 
 | 단계 | 활동                                                                                       | 시간   |
-|------|---------------------------------------------------------------------------------------------|--------|
-| 1    | [워크숍 개요](partner-workshop.md)                                                           | 30분 |
-| 2    | [Codespaces 또는 로컬 VS Code 설정](partner-workshop-setup.md)                               | 30분 |
-| 3    | [계획, 비전, 경험, 아키텍처 설계, 백로그](partner-workshop-role-tracks.md)                    | 90분 |
-| 4    | [검증 및 솔루션](partner-workshop-solution.md)                                                | 30분 |
-| 5    | [**Microsoft Marketplace 및 Copilot Agent Store 준비**](partner-workshop-publishing.md)      | 60분 |
-| 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                             | 30분 |
-
-워크숍의 게시 준비 단계에서 이 가이드를 사용하세요. 목표는 워크숍
-결과물을 올바른 게시 경로를 위한 명확한 후속 계획으로 전환하는 것입니다.
+|------|-------------------------------------------------------------------------------------------|-------|
+| 1    | [워크샵 개요](partner-workshop.md)                                                     | 30분 |
+| 2    | [로컬 VS Code 설정](partner-workshop-setup.md)                                            | 30분 |
+| 3    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
+| 3    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
+| 4    | [검증 및 솔루션](partner-workshop-solution.md)                                             | 30분 |
+| 5    | [**Microsoft Marketplace 및 Copilot Agent Store 준비**](partner-workshop-publishing.md)       | 60분 |
+| 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                            | 30분 |
 
 ## 목표
 
 Microsoft Marketplace와 Microsoft 365 Copilot Agent Store를 통한 게시에
 적합하고 검토 가능하도록 만드는 데 필요한 최소한의 작업을 파악하세요.
 
-## 권장 워크숍 결과
+## 권장 워크샵 결과
 
 세션이 끝날 때까지 팀은 다음 질문에 답할 수 있어야 합니다:
 
@@ -165,7 +163,7 @@ agent-store plan under .copilot-tracking/details/.
 > 두 코치 모두 세무, 법률, 재무 조언을 제공하지 않습니다. Microsoft가
 > 문서화한 내용을 설명하며, 답변이 귀하의 법인, 관할권, 계약에 따라
 > 달라지는 지점에서 멈춥니다. 그러한 질문은 자격을 갖춘 전문가에게
-> 전달하고 그 의뢰를 워크숍 작업 항목으로 기록하세요.
+> 전달하고 그 의뢰를 워크샵 작업 항목으로 기록하세요.
 
 ## 제품 매니저 상용화 계획
 
