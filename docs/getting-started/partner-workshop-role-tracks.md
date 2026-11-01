@@ -323,16 +323,18 @@ responsible AI requirements, potential harms, mitigation ideas, and updates to
 the draft."
 ```
 
-14. 팀이 Figma를 사용한다면, 경험 초안에 Figma 파일, 와이어프레임,
-    디자인 아티팩트에 대한 링크나 참조를 포함하세요. Figma 결과물을
-    사용자 흐름, 화면, 디자인 결정의 증거로 사용하고, 해당 아티팩트가
-    워크샵 핸드오프를 어떻게 뒷받침하는지 메모하세요.
+14. 팀에서 Figma를 사용하는 경우, 사용자 경험 초안에 Figma 파일, 와이어프레임 및 
+    디자인 산출물의 링크나 참조 정보를 포함합니다. 
+    사용자 흐름, 화면 구성 및 디자인 의사결정의 근거 자료로 Figma 결과물을 활용하고, 
+    이러한 산출물이 워크숍 결과물의 Handoff에 어떻게 활용되는지도 정리합니다.
+    (*Note: Figma는 웹과 앱의 화면, 와이어프레임, 프로토타입 등을 만들고 
+    팀이 함께 검토할 수 있는 협업 디자인 도구입니다.)
 
-#### Figma MCP와 FigJam 연결하기
+#### Figma MCP와 FigJam 연결하기 (Optional)
 
-Figma MCP는 선택 사항입니다. 디자인 증거, 사용자 흐름, 와이어프레임,
-워크샵 핸드오프를 위해 GitHub Copilot을 Figma 파일과 FigJam 보드에
-연결합니다.
+Figma MCP는 선택 사항입니다. 
+GitHub Copilot을 Figma 파일 및 FigJam 보드와 연결하여, 사용자 흐름, 와이어프레임, 
+디자인 참고 자료를 활용하고 워크숍 결과물을 다음 단계로 원활하게 전달할 수 있도록 합니다.
 
 15. 작업 공간 루트에서 `.vscode/mcp.json`을 만들거나 여세요.
 16. Figma MCP 서버를 추가하세요:
@@ -363,10 +365,11 @@ Professional, Organization, Enterprise 플랜의 Dev 또는 Full 시트가 있�
 Figma 계정이 필요합니다. 전체 작업 공간 구성 및 문제 해결 가이드는
 [MCP 서버 구성](mcp-configuration)을 참고하세요.
 
-21. Microsoft 365 Copilot Agent Store에 게시하기 위한 사용 사례를
-    식별하고 검증하세요.
-   `.copilot-tracking/dt/` 아래의 경험 초안을 선택하고 UX UI
-   Designer에게 다음과 같이 프롬프트하세요:
+#### Microsoft 365 Copilot Agent Store 연결하기
+
+21. Microsoft 365 Copilot Agent Store에 게시하기 위한 사용 사례를 선정하고 적합성을 검증합니다.
+    `.copilot-tracking/dt/` 폴더에서 사용자 경험 초안을 선택한 다음, 
+    UX UI Designer에게 다음과 같이 프롬프트하세요:
 
 ```text
 "How would end users benefit from Microsoft 365 Copilot integrated to this
@@ -375,15 +378,15 @@ experience
 draft under `.copilot-tracking/dt/`."
 ```
 
-22. 경험을 Microsoft Marketplace와 Microsoft 365 Copilot Agent
-    Store를 위해 어떻게 패키징하고, 발견 가능하게 하고, 검토 가능하게
-    할지 메모하세요.
+22. Microsoft Marketplace와 Microsoft 365 Copilot Agent Store에 게시할 수 있도록, 
+    사용자 경험을 어떻게 패키징하고, 쉽게 검색·발견할 수 있게 하며, 
+    검토 가능한 형태로 준비할지 정리합니다.
 23. 성공 기준과 미해결 질문을 정의하세요.
-4. 검토된 결과를 경험 초안으로 `.copilot-tracking/dt/` 아래에
-   저장하세요.
+24. 검토된 experience draft결과를 `.copilot-tracking/dt/` 아래에 저장하세요.
 
 ### 결과물
 
-`.copilot-tracking/dt/`: 사용자 경로, 어려움, 디자인 제약을 포착한 사용자 경험 초안.
+`.copilot-tracking/dt/` 폴더 아래에 사용자 경험 초안 (experience draft) 문서 생성
+- 사용자 여정, Pain Point, 디자인 제약을 캡처한 내용
 
 다음 단계: [**역할별 트랙 Part2: 아키텍처 설계, 백로그**](partner-workshop-role-tracks-2.md)를 진행하세요.
