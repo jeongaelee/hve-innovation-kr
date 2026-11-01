@@ -17,13 +17,13 @@ estimated_reading_time: 10
 
 | 단계 | 활동                                                                                       | 시간   |
 |------|-------------------------------------------------------------------------------------------|-------|
-| 1    | [워크샵 개요](partner-workshop.md)                                                        | 30분 |
-| 2    | [로컬 VS Code 설정](partner-workshop-setup.md)                                            | 30분 |
-| 3    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
-| 3    | [**역할별 트랙 Part2: 아키텍처 설계, 백로그**](partner-workshop-role-tracks-2.md)          | 45분 |
+| 1    | [워크샵 개요](partner-workshop.md)                                                     | 30분 |
+| 2    | [**로컬 VS Code 설정**](partner-workshop-setup.md)                                            | 30분 |
+| 3-1    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
+| 3-2    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
 | 4    | [검증 및 솔루션](partner-workshop-solution.md)                                             | 30분 |
 | 5    | [Microsoft Marketplace 및 Copilot Agent Store 준비](partner-workshop-publishing.md)       | 60분 |
-| 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                          | 30분 |
+| 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                            | 30분 |
 
 이 문서는 파트너 워크샵의 프로젝트 관리 및 기술 트랙을 다룹니다. 요구사항, 사용자 경험,
 구현 계획을 검토한 뒤 솔루션 접근 방식, 아키텍처, 보안 및 게시 고려
@@ -261,7 +261,7 @@ backlog plan and create the backlog in GitHub Issues."
 마세요. 목표는 팀이 워크샵 이후 다듬을 수 있는 검토된 초안을 만드는
 것입니다.
 
-[솔루션 가이드](partner-workshop-solution.md)로 진행하세요.
+다음 단계: [**검증 및 솔루션**](partner-workshop-solution.md)을 진행하세요.
 
 ---
 

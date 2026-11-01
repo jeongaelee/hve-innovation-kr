@@ -394,5 +394,6 @@ draft under `.copilot-tracking/dt/`."
 
 ### 결과물
 
-`.copilot-tracking/dt/`: 사용자 경로, 어려움, 디자인 제약을 포착한 사용자
-경험 초안.
+`.copilot-tracking/dt/`: 사용자 경로, 어려움, 디자인 제약을 포착한 사용자 경험 초안.
+
+다음 단계: [**역할별 트랙 Part2: 아키텍처 설계, 백로그**](partner-workshop-role-tracks-2.md)를 진행하세요.

@@ -19,10 +19,10 @@ estimated_reading_time: 8
 | 단계 | 활동                                                                                       | 시간   |
 |------|-------------------------------------------------------------------------------------------|-------|
 | 1    | [워크샵 개요](partner-workshop.md)                                                     | 30분 |
-| 2    | [로컬 VS Code 설정](partner-workshop-setup.md)                                            | 30분 |
-| 3    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
-| 3    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
-| 4    | [**검증 및 솔루션**](partner-workshop-solution.md)                                             | 30분 |
+| 2    | [**로컬 VS Code 설정**](partner-workshop-setup.md)                                            | 30분 |
+| 3-1    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
+| 3-2    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
+| 4    | [검증 및 솔루션](partner-workshop-solution.md)                                             | 30분 |
 | 5    | [Microsoft Marketplace 및 Copilot Agent Store 준비](partner-workshop-publishing.md)       | 60분 |
 | 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                            | 30분 |
 
@@ -122,7 +122,7 @@ publish anything."
 5. 팀이 가장 큰 위험 세 가지를 지목합니다.
 6. 퍼실리테이터가 담당자와 다음 검토 일정을 확인합니다.
 
-[게시 가이드](partner-workshop-publishing.md)로 진행하세요.
+다음 단계: [**Microsoft Marketplace 및 Copilot Agent Store 준비**](partner-workshop-publishing.md)를 진행하세요.
 
 ---
 
