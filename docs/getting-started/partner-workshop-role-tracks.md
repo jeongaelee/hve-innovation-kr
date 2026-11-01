@@ -147,9 +147,12 @@ in evidence, not marketing language. Save the output under
    ```text
    /rpi-research
    session-context=.copilot-tracking/research/[date]/[session-name]-session-context.md.
-   Read the topic and evidence root from the session context and theworkshop-input.
-   Research the supplied scenario, policies, process notes, and supporting materials. Identify evidence-backed business facts, affected users, business rules, constraints, known failure cases, AI guardrails, open questions, and credible alternatives or counter-evidence.
-   Save the dated primary research artifact under `.copilot-tracking/research/`. Keep the scope to context discovery.
+   Read the topic and evidence root from the session context and the workshop-input.
+   Research the supplied scenario, policies, process notes, and supporting materials. 
+   Identify evidence-backed business facts, affected users, business rules, constraints, 
+   known failure cases, AI guardrails, open questions, and credible alternatives or counter-evidence.
+   Save the dated primary research artifact under `.copilot-tracking/research/`. 
+   Keep the scope to context discovery.
    ```
 
    로컬로 동기화되고 접근이 통제된 OneDrive 폴더를 사용하는 프로덕션 사례의 경우, 신뢰할 수 있는 증거 루트를 명시적으로 제공하세요:
@@ -162,10 +165,8 @@ in evidence, not marketing language. Save the output under
    folder. Identify evidence-backed business facts, affected users, business
    rules, constraints, known failure cases, AI guardrails, open questions, and
    credible alternatives or counter-evidence. Save the dated primary research
-   artifact under `.copilot-tracking/research/`. Do not copy source files into
-   the
-   repository; cite the source filename and controlled location in the research
-   artifact.
+   artifact under `.copilot-tracking/research/`. Do not copy source files into 
+   the repository; cite the source filename and controlled location in the research artifact.
    ```
 
    조직의 권한, 보존, 분류 정책이 적용되는 OneDrive 폴더를 사용하세요.
@@ -192,6 +193,7 @@ in evidence, not marketing language. Save the output under
    requirements, metrics, or implementation commitments. Mark the document as a
    draft for human review and include testable acceptance criteria where they
    clarify the business outcome.
+   Create BRD draft in Korea under '.copilot-tracking/brd-sessions/'.
    ```
 
    팀이 제품 동작, 사용자 요구, 기능 요구사항, 비기능 요구사항, 수락 기준이 필요할 때 **PRD Builder**를 사용하세요:
@@ -200,10 +202,8 @@ in evidence, not marketing language. Save the output under
    Select the /PRD Builder agent. Session context:
    .copilot-tracking/research/[date]/[session-name]-session-context.md.
    Read the topic from the session context, then use its research artifact and
-   business requirements references. Draft a concise product requirements
-   outline
-   covering target users, jobs to be done, user journeys, in-scope and
-   out-of-scope
+   business requirements references. Draft a concise product requirements outline
+   covering target users, jobs to be done, user journeys, in-scope and out-of-scope
    behavior, functional requirements, non-functional requirements, data and AI
    guardrails, known failure cases, accessibility needs, success metrics,
    dependencies, and testable acceptance criteria. Save the PRD draft and its
@@ -212,48 +212,43 @@ in evidence, not marketing language. Save the output under
    decisions, and open questions. Do not invent customer data, policy
    requirements, or unsupported technical details. Mark the document as a draft
    for human review.
+   Create PRD draft in Korea under '.copilot-tracking/prd-sessions/`.
    ```
 
-   프로덕션 증거의 경우, 승인된 소스 경로나 통제된 링크를 컨텍스트로 제공하세요. 승인된 환경이 허용하지 않는 한 민감한 소스 콘텐츠를 저장소에 붙여넣거나 복사하지 마세요.
+   운영 환경에서 사용할 참고 자료는 승인된 원본 경로 또는 관리되는 링크를 컨텍스트로 제공합니다. 승인된 환경에서 허용된 경우가 아니라면, 민감한 원본 내용을 리포지토리에 직접 붙여 넣거나 복사하지 마세요.
 
 ### 결과물
 
-1. **리서치 아티팩트**(`.copilot-tracking/research/`): 사실, 가정,
-   제약, 미해결 질문을 담은 증거 기반 리서치 결과.
-2. **BRD 초안**(`.copilot-tracking/brd-sessions/`): 비즈니스 요구사항,
-   이해관계자, 결과, 제약, 수락 의도.
-3. **요구사항 초안**(`.copilot-tracking/prd-sessions/`): 테스트 가능한
-   수락 기준을 갖춘 제품 요구사항.
+1. **리서치 아티팩트**(`.copilot-tracking/research/`): 사실, 가정, 제약, 미해결 질문을 담은 증거 기반 리서치 결과.
+2. **BRD 초안**(`.copilot-tracking/brd-sessions/`): 비즈니스 요구사항, 이해관계자, 결과, 제약, 수락 의도.
+3. **요구사항 초안**(`.copilot-tracking/prd-sessions/`): 테스트 가능한수락 기준을 갖춘 제품 요구사항.
 
 ## 디자인 트랙
 
 ### 목표
 
-비즈니스 컨텍스트를 명확한 사용자 경험과 문제에 대한 공유된 이해로
-변환하세요.
+비즈니스 컨텍스트를 명확한 사용자 경험과 문제에 대한 공유된 이해로 변환하세요.
 
 ### 단계
 
-1. `.copilot-tracking/research/` 아래 SME가 만든 컨텍스트 패키지를
-   읽으세요.
-2. 최종 경험 초안을 작성하기 전에 공유 컨텍스트에 디자인 증거를
-   추가하세요. 관련 사용자 리서치, 화면 스케치, 와이어프레임을 동일한
-   프로젝트 폴더에 담아 다음 역할이 증거 추적의 일부로 검토할 수 있도록
-   하세요. 실무적인 패턴은 다음과 같습니다:
+1. `.copilot-tracking/research/` 아래 SME가 만든 컨텍스트 패키지를 읽으세요.
+2. 최종 사용자 경험 초안을 작성하기 전에, 디자인 참고 자료를 팀의 공통 컨텍스트에 추가합니다.
+   관련 사용자 리서치, 화면 스케치, 와이어프레임을 동일한 프로젝트 폴더에 담아 다음 역할이 증거 추적의 일부로 검토할 수 있도록 하세요. 
+   
+   다음과 같은 패턴으로 진행할 수 있습니다:
 
-   * 시나리오를 위해 `.copilot-tracking/dt/<project-name>/` 아래에
-     디자인 작업 폴더를 만드세요.
-   * 연구 목표, 참가자, 관찰, 핵심 테마, 미해결 질문을 담은 간단한
-     `user-research.md`를 추가하세요.
-   * 로파이 화면 스케치, 주석이 달린 목업, 또는 Figma 파일 링크를 위한
-     `screens/` 또는 `wireframes/` 폴더를 추가하세요.
+   * 시나리오를 위해 `.copilot-tracking/dt/<project-name>/` 아래에 디자인 작업 폴더를 만드세요.
+   * 연구 목표, 참여자, 주요 관찰 내용, 핵심 인사이트 및 추가로 확인이 필요한 질문을 담은 
+     간단한 `user-research.md`를 추가하세요.
+   * 초기 단계의 화면 스케치, 주석이 포함된 목업 또는 Figma 파일 링크를 저장할 수 있도록 
+     `screens/` 또는 `wireframes/` 폴더를 추가하세요
    * 사용자 흐름, 주요 어려움, 결정 사항을 요약하는
      `journey-notes.md` 또는 `experience-draft.md`를 추가하세요.
-   * 각 아티팩트에 증거 유형, 날짜, 출처, 관찰됨/보고됨/가정됨/미해결
-     질문 여부를 라벨링하세요.
-   * 고객 데이터 또는 규제 대상 데이터는 저장소 밖에 두세요. 디자인
-     아티팩트가 보호되는 데이터에 기반한다면 민감한 콘텐츠를 복사하는
-     대신 승인된 소스 위치를 참조하세요.
+   * 각 산출물에 참고 자료 유형, 날짜, 출처를 표시하고, 해당 내용이 관찰된 사실인지, 전달받은 정보인지, 
+     가정인지 또는 추가 확인이 필요한 질문인지 구분합니다.
+   * 고객 데이터 또는 규제 대상 데이터는 리포지토리에 저장하지 않습니다. 
+     디자인 산출물이 보호 대상 데이터를 기반으로 하는 경우, 
+     민감한 내용을 직접 복사하지 말고 승인된 원본 위치를 참조합니다.
 
    예시 패턴:
 
@@ -269,22 +264,17 @@ in evidence, not marketing language. Save the output under
     customer-conversation-prep.fig
 ```
 
-3. 리서치와 디자인 아티팩트를 사용하여 가정이 아닌 관찰된 사용자
-   요구에 디자인 결정을 근거하세요. 팀이 나중에 검토할 수 있도록
-   미해결 질문과 가정의 목록을 유지하세요.
-4. 최종 사용자 및 이해관계자와 함께 에이전틱 AI 기능을 브레인스토밍하기
-   위한 design thinking
-   [**Microsoft AI Discovery Cards 워크샵**](https://aka.ms/AIDiscoveryCards)을
-   계획하세요.
-5. 하나의 주요 사용자와 하나의 핵심 과업(job to be done)을
-   선택하세요.
-6. 현재 여정을 매핑하고 어려움을 식별하세요.
-7. 의도한 솔루션으로 미래 여정을 설명하세요.
+3. 리서치 및 디자인 자료를 활용하여, 가정이 아닌 실제로 관찰된 사용자 요구를 바탕으로 디자인 의사결정을 
+   내립니다. 
+   아직 확인이 필요한 질문과 가정은 별도로 정리하여 팀이 추후 검토할 수 있도록 합니다.
+4. 최종 사용자 및 이해 관계자와 함께 에이전틱 AI 기능을 브레인스토밍하기위한 design thinking
+   [**Microsoft AI Discovery Cards 워크샵**](https://aka.ms/AIDiscoveryCards)을 계획하세요.
+5. 하나의 주요 사용자와 그 사용자가 해결해야 할 하나의 핵심 과제를 선정합니다.
+6. 현재 사용자 여정을 정리하고 주요 불편 사항(Pain Point)을 파악합니다.
+7. 의도한 솔루션을 구현했을때 사용자의 경험(여정)이 앞으로 어떻게 달라질지 그려봅니다.
 8. 접근성과 책임 있는 AI 요구사항을 추가하세요.
-9. 첫 초안이 필요하다면 **UX UI Designer**에게 문제를 간단한 사용자
-   여정과 경험 개요로 전환하도록 요청하세요.
-   `.copilot-tracking/research/` 아래의 컨텍스트 패키지를 선택하고
-   GitHub Copilot Chat에서 다음 프롬프트를 사용하세요:
+9. 첫 초안이 필요하다면 **UX UI Designer**에게 문제를 간단한 사용자 여정과 경험 개요로 전환하도록 요청하세요.
+   `.copilot-tracking/research/` 아래의 컨텍스트 패키지를 선택하고GitHub Copilot Chat에서 다음 프롬프트를 사용하세요:
 
 ```text
 "Turn these notes into a simple user journey, experience outline, and key pain
@@ -293,7 +283,7 @@ points for this scenario. Save the reviewed experience draft under
 ```
 
 10. 팀에 안내된 대화가 필요하다면 **Design Thinking Coach**에게 기회를
-    구성하고 가정에 도전하도록 요청하세요.
+    구성하고 가정에 도전하도록 요청하세요. **DT Coach** Agent를 선택합니다.
 
 ```text
 "Coach me through a short design thinking session for this scenario. Help me
@@ -303,7 +293,7 @@ for the solution."
 
 11. 팀에 학습 지원이나 더 명확한 다음 단계가 필요하다면
     **Design Thinking Learning Tutor**에게 방법을 설명하고 메모를 간단한
-    디자인 아티팩트로 전환하도록 도움을 요청하세요.
+    디자인 아티팩트로 전환하도록 도움을 요청하세요. **DT Learning Tutor** Agent를 선택합니다.
 
 ```text
 "Act as a Design Thinking Learning Tutor. Explain the next design thinking step
