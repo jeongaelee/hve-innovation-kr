@@ -3,7 +3,7 @@ title: 파트너 워크샵 솔루션
 description: 역할별 결과물을 공유 솔루션 패키지, 백로그, 아키텍처 뷰, 게시 준비 계획으로 통합
 sidebar_position: 10
 author: Microsoft
-ms.date: 2026-10-31
+ms.date: 2026-11-01
 ms.topic: tutorial
 keywords:
   - workshop solution
@@ -122,7 +122,8 @@ publish anything."
 5. 팀이 가장 큰 위험 세 가지를 지목합니다.
 6. 퍼실리테이터가 담당자와 다음 검토 일정을 확인합니다.
 
-다음 단계: [**Microsoft Marketplace 및 Copilot Agent Store 준비**](partner-workshop-publishing.md)를 진행하세요.
+### 다음 단계
+[**Microsoft Marketplace 및 Copilot Agent Store 준비**](partner-workshop-publishing.md)를 진행하세요.
 
 ---
 

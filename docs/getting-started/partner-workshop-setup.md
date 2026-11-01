@@ -3,7 +3,7 @@ title: 파트너 워크샵 설정
 description: HVE 파트너 워크샵을 위한 로컬 VS Code 설정 안내
 sidebar_position: 8
 author: Microsoft
-ms.date: 2026-10-31
+ms.date: 2026-11-01
 ms.topic: tutorial
 keywords:
   - GitHub Codespaces
@@ -152,7 +152,8 @@ Date: 2026-11-04
 5. 검토된 결과를 프로덕션 아티팩트 디렉터리에 저장하세요.
 6. 아티팩트를 다음 역할에 전달하세요.
 
-다음 단계: [**역할별 트랙 Part1: 계획/비전/경험**](partner-workshop-role-tracks.md)을 진행하세요.
+## 다음 단계
+[**역할별 트랙 Part1: 계획/비전/경험**](partner-workshop-role-tracks.md)을 진행하세요.
 
 ---
 

@@ -3,7 +3,7 @@ title: HVE 파트너 워크샵
 description: HVE Core로 요구사항, 컨텍스트, 백로그, Azure 아키텍처, 게시 계획을 만드는 파트너용 워크샵
 sidebar_position: 7
 author: Microsoft
-ms.date: 2026-10-31
+ms.date: 2026-11-01
 ms.topic: tutorial
 keywords:
   - partner workshop
@@ -114,7 +114,8 @@ docs/
 * [Architecture Diagrams Skill](../agents/project-planning/arch-diagram-builder.md)
 * [MCP 구성](mcp-configuration.md)
 
-다음 단계: [**로컬 VS Code 설정**](partner-workshop-setup.md)을 진행하세요.
+### 다음 단계
+[**로컬 VS Code 설정**](partner-workshop-setup.md)을 진행하세요.
 
 ---
 

@@ -3,7 +3,7 @@ title: 파트너 워크샵 게시 후속 작업
 description: Microsoft Marketplace와 Microsoft 365 Copilot Agent Store를 위한 게시 준비 상태와 제품 가격 책정 구성
 sidebar_position: 11
 author: Microsoft
-ms.date: 2026-10-31
+ms.date: 2026-11-01
 ms.topic: how-to
 keywords:
   - Azure Applications
@@ -355,7 +355,8 @@ Marketplace FastTrack 코칭 세션을 지원할 참고 가이드는 다음과
 8. 검증된 Microsoft 365 앱 패키지를 업로드하세요.
 9. 오퍼를 검증에 제출하고 인증 발견 사항을 해결하세요.
 
-다음 단계: [**구현 및 상용화로의 핸드오프**](partner-workshop-implementation.md)를 진행하세요.
+## 다음 단계
+[**구현 및 상용화로의 핸드오프**](partner-workshop-implementation.md)를 진행하세요.
 
 ---
 

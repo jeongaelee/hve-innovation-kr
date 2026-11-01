@@ -3,7 +3,7 @@ title: 파트너 워크샵 - 역할별 트랙 Part1- 계획/비전/경험
 description: HVE 파트너 워크샵을 위한 구조화된 역할 기반 가이드
 sidebar_position: 9
 author: Microsoft
-ms.date: 2026-10-31
+ms.date: 2026-11-01
 ms.topic: tutorial
 keywords:
   - Project Manager
@@ -389,4 +389,5 @@ draft under `.copilot-tracking/dt/`."
 `.copilot-tracking/dt/` 폴더 아래에 사용자 경험 초안 (experience draft) 문서 생성
 - 사용자 여정, Pain Point, 디자인 제약을 캡처한 내용
 
-다음 단계: [**역할별 트랙 Part2: 아키텍처 설계, 백로그**](partner-workshop-role-tracks-2.md)를 진행하세요.
+## 다음 단계
+[**역할별 트랙 Part2: 아키텍처 설계, 백로그**](partner-workshop-role-tracks-2.md)를 진행하세요.

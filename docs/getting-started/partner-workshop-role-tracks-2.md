@@ -3,7 +3,7 @@ title: 파트너 워크샵 - 역할별 트랙 Part2- PM 및 기술 트랙
 description: HVE 파트너 워크샵을 위한 프로젝트 관리 및 기술 역할 가이드
 sidebar_position: 10
 author: Microsoft
-ms.date: 2026-10-31
+ms.date: 2026-11-01
 ms.topic: tutorial
 keywords:
   - Project Manager
@@ -261,7 +261,8 @@ backlog plan and create the backlog in GitHub Issues."
 마세요. 목표는 팀이 워크샵 이후 다듬을 수 있는 검토된 초안을 만드는
 것입니다.
 
-다음 단계: [**검증 및 솔루션**](partner-workshop-solution.md)을 진행하세요.
+## 다음 단계
+[**검증 및 솔루션**](partner-workshop-solution.md)을 진행하세요.
 
 ---
 
