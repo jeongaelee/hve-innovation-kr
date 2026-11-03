@@ -161,7 +161,8 @@ in evidence, not marketing language. Save the output under
    session-context=.copilot-tracking/research/[date]/[session-name]-session-context.md.
    session context와 workshop-input에서 topic과 evidence root를 확인하세요.
    제공된 scenario, policies, process notes 및 supporting materials를 조사하세요.
-   근거 자료를 바탕으로 비즈니스 사실, 영향을 받는 사용자, 비즈니스 규칙, 제약 사항, 알려진 실패 사례, AI 안전 장치, 미해결 질문, 그리고 신뢰할 수 있는 대안이나 반대 근거를 식별하세요.
+   근거 자료를 바탕으로 비즈니스 사실, 영향을 받는 사용자, 비즈니스 규칙, 제약 사항, 
+   알려진 실패 사례, AI 안전 장치, 미해결 질문, 그리고 신뢰할 수 있는 대안이나 반대 근거를 식별하세요.
    날짜가 포함된 primary research artifact를 `.copilot-tracking/research/` 아래에 저장하세요.
    범위는 context discovery로 제한하세요.
    ```
@@ -211,11 +212,15 @@ in evidence, not marketing language. Save the output under
    ```text   
    /BRD Builder agent를 선택하세요.
    Session context: .copilot-tracking/research/[date]/[session-name]-session-context.md
-   session context에서 topic을 확인한 다음, 해당 문서에 포함된 evidence references와 research artifact를 활용하세요.
-   비즈니스 문제, 영향을 받는 이해관계자, 측정 가능한 비즈니스 성과, 범위,non-goals, 비즈니스 규칙, 제약 사항, 리스크, 가정, 의존성, 미해결 질문을 포함하는 간결한 비즈니스 요구사항 개요를 작성하세요.
+   session context에서 topic을 확인한 다음, 해당 문서에 포함된 
+   evidence references와 research artifact를 활용하세요.
+   비즈니스 문제, 영향을 받는 이해관계자, 측정 가능한 비즈니스 성과, 범위,non-goals, 비즈니스 규칙, 
+   제약 사항, 리스크, 가정, 의존성, 미해결 질문을 포함하는 간결한 비즈니스 요구사항 개요를 작성하세요.
    BRD 초안과 해당 session state를 .copilot-tracking/brd-sessions/ 아래에 저장하세요.
-   근거 자료로 확인된 사실, 가정, 그리고 제안된 의사결정을 명확하게 구분하세요. 고객 관련 사실, 정책 요구사항, 측정 지표 또는 구현 약속을 임의로 만들어내지 마세요.
-   문서에 인적 검토가 필요한 초안임을 표시하고, 비즈니스 성과를 명확하게 설명하는 데 도움이 되는 경우 검증 가능한 인수 기준을 포함하세요.
+   근거 자료로 확인된 사실, 가정, 그리고 제안된 의사결정을 명확하게 구분하세요. 고객 관련 사실, 
+   정책 요구사항, 측정 지표 또는 구현 약속을 임의로 만들어내지 마세요.
+   문서에 인적 검토가 필요한 초안임을 표시하고, 비즈니스 성과를 명확하게 설명하는 데 도움이 되는 경우 
+   검증 가능한 인수 기준을 포함하세요.
     ```
 
    팀이 제품 동작, 사용자 요구, 기능 요구사항, 비기능 요구사항, 수락 기준이 필요할 때 **PRD Builder**를 사용하세요:
@@ -241,10 +246,18 @@ in evidence, not marketing language. Save the output under
    ```text
    Select the /PRD Builder agent. Session context:
    .copilot-tracking/research/[date]/[session-name]-session-context.md.
-   세션 맥락에서 주제를 읽은 후, 연구 산출물과 비즈니스 요구사항 참고문헌을 활용하세요. 간결한 제품 요구사항 개요를 작성하세요.
-   대상 사용자, 수행할 작업, 사용자 여정, 범위 내 및 범위 외 동작, 기능적 요구사항, 비기능적 요구사항, 데이터 및 AI 가드레일, 알려진 실패 사례, 접근성 요구사항, 성공 지표, 의존성, 테스트 가능한 수용 기준을 포함합니다. PRD 초안과 세션 상태를 `.copilot-tracking/prd-sessions/` 경로에 저장합니다. 근거 자료에 대한 인용이나 참고문헌을 보존하세요. 사실과 가정을 구분하세요.
-   결정과 열린 질문들. 고객 데이터, 정책 요구사항, 또는 근거 없는 기술적 세부사항을 임의로 생성하지 마세요. 해당 문서를 사람이 검토할 초안으로 표시하세요.
-   운영 환경에서 사용할 참고 자료는 승인된 원본 경로 또는 관리되는 링크를 컨텍스트로 제공합니다. 승인된 환경에서 허용된 경우가 아니라면, 민감한 원본 내용을 리포지토리에 직접 붙여 넣거나 복사하지 마세요.
+   세션 맥락에서 주제를 읽은 후, 연구 산출물과 비즈니스 요구사항 참고문헌을 활용하세요. 
+   간결한 제품 요구사항 개요를 작성하세요.
+   대상 사용자, 수행할 작업, 사용자 여정, 범위 내 및 범위 외 동작, 기능적 요구사항, 
+   비기능적 요구사항, 데이터 및 AI 가드레일, 알려진 실패 사례, 접근성 요구사항, 
+   성공 지표, 의존성, 테스트 가능한 수용 기준을 포함합니다. 
+   PRD 초안과 세션 상태를 `.copilot-tracking/prd-sessions/` 경로에 저장합니다. 
+   근거 자료에 대한 인용이나 참고문헌을 보존하세요. 사실과 가정을 구분하세요.
+   결정과 열린 질문들. 고객 데이터, 정책 요구사항, 또는 근거 없는 기술적 세부사항을 
+   임의로 생성하지 마세요. 해당 문서를 사람이 검토할 초안으로 표시하세요.
+   운영 환경에서 사용할 참고 자료는 승인된 원본 경로 또는 관리되는 링크를 컨텍스트로 제공합니다. 
+   승인된 환경에서 허용된 경우가 아니라면, 민감한 원본 내용을 리포지토리에 직접 붙여 
+   넣거나 복사하지 마세요.
    ```
 
 ### 결과물
@@ -328,7 +341,8 @@ in evidence, not marketing language. Save the output under
 
    한글 프롬프트:
    ```text
-   이 시나리오를 바탕으로 짧은 디자인 씽킹 세션을 진행할 수 있도록 코치해 주세요. 문제를 명확히 정의하고, 사용자의 니즈를 파악한 다음, 솔루션이 집중해야 할 핵심 기회 영역을 구체화할 수 있도록 도와주세요.
+   이 시나리오를 바탕으로 짧은 디자인 씽킹 세션을 진행할 수 있도록 코치해 주세요. 문제를 명확히 정의하고, 
+   사용자의 니즈를 파악한 다음, 솔루션이 집중해야 할 핵심 기회 영역을 구체화할 수 있도록 도와주세요.
    ```
 
 11. 팀에 학습 지원이나 더 명확한 다음 단계가 필요하다면
@@ -343,7 +357,8 @@ in evidence, not marketing language. Save the output under
    
    한글 프롬프트:
    ```text
-   디자인 씽킹 학습 튜터 역할을 해주세요. 이 상황에서 다음 디자인 씽킹 단계를 설명해 주시고, 제 노트를 인사이트, 기회 진술서 또는 사용자 여정 개요로 바꾸는 데 도움을 주세요.
+   디자인 씽킹 학습 튜터 역할을 해주세요. 이 상황에서 다음 디자인 씽킹 단계를 설명해 주시고, 
+   제 노트를 인사이트, 기회 진술서 또는 사용자 여정 개요로 바꾸는 데 도움을 주세요.
    ```
 
 12. **Accessibility Planner**와 **Accessibility Reviewer**를 사용하여
@@ -359,7 +374,8 @@ in evidence, not marketing language. Save the output under
 
    한글 프롬프트:
    ```text
-   `.copilot-tracking/dt/` 아래의 경험 초안(experience draft)을 검토하고 접근성 요구사항, 사용자 요구사항, 구현을 위해 추가 확인이 필요한 질문, Draft에 반영해야할 업데이트 사항을 식별하세요.
+   `.copilot-tracking/dt/` 아래의 경험 초안(experience draft)을 검토하고 접근성 요구사항, 
+   사용자 요구사항, 구현을 위해 추가 확인이 필요한 질문, Draft에 반영해야할 업데이트 사항을 식별하세요.
    ```
 
 13. **RAI Planner**와 **RAI Reviewer**를 사용하여 책임 있는 AI
@@ -374,7 +390,8 @@ in evidence, not marketing language. Save the output under
    ```
    한글 프롬프트:
    ```text
-   `.copilot-tracking/dt/` 아래의 경험 초안(experience draft)을 검토하고 책임 있는 AI 요구사항, 잠재적 위험, 완화 아이디어, Draft에 반영해야할 업데이트 사항을 식별하세요.
+   `.copilot-tracking/dt/` 아래의 경험 초안(experience draft)을 검토하고 책임 있는 AI 요구사항, 
+   잠재적 위험, 완화 아이디어, Draft에 반영해야할 업데이트 사항을 식별하세요.
    ```
 
 14. 팀에서 Figma를 사용하는 경우, 사용자 경험 초안에 Figma 파일, 와이어프레임 및 
@@ -434,7 +451,9 @@ Figma 계정이 필요합니다. 전체 작업 공간 구성 및 문제 해결 �
    
    한글 프롬프트:
    ```text
-   Microsoft 365 Copilot이 이 시나리오에 통합되었을 때 최종 사용자가 얻을 수 있는 이점은 무엇인가요? 이를 검증하기 위해 어떤 연구가 필요할까요? `.copilot-tracking/dt/` 아래의 경험 초안(experience draft)을 업데이트하세요.
+   Microsoft 365 Copilot이 이 시나리오에 통합되었을 때 최종 사용자가 얻을 수 있는 이점은 무엇인가요? 
+   이를 검증하기 위해 어떤 연구가 필요할까요? 
+   `.copilot-tracking/dt/` 아래의 경험 초안(experience draft)을 업데이트하세요.
    ```
 
 22. Microsoft Marketplace와 Microsoft 365 Copilot Agent Store에 게시할 수 있도록, 
