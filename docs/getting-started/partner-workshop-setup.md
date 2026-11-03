@@ -43,13 +43,16 @@ estimated_reading_time: 8
 1. [Git](https://git-scm.com/downloads)과
    [Visual Studio Code](https://code.visualstudio.com/Download)를
    설치하세요.
-2. VS Code를 열고 확장 보기를 열어 **GitHub Copilot**과 **GitHub Copilot Chat**을 설치하세요.
-3. Copilot 접근 권한이 있는 GitHub 계정으로 로그인하세요.
-4. [HVE Core All](https://marketplace.visualstudio.com/items?itemName=ise-hve-essentials.hve-core-all)을
+2. Node.js, mermaid-cli 를 설치하세요. (윈도우 명령 프롬프트를 열고 아래 명령을 통해서 설치하세요)
+     winget install OpenJS.NodeJS.LTS
+     npm install –g @mermaid-js/mermaid-cli 
+3. VS Code를 열고 확장 보기를 열어 **GitHub Copilot**과 **GitHub Copilot Chat**을 설치하세요.
+4. Copilot 접근 권한이 있는 GitHub 계정으로 로그인하세요.
+5. [HVE Core All](https://marketplace.visualstudio.com/items?itemName=ise-hve-essentials.hve-core-all)을
    설치하세요.
-5. 명령 팔레트를 열고 [https://github.com/jeongaelee/hve-innovation-kr](https://github.com/jeongaelee/hve-innovation-kr)에 대해 **Git: Clone**을 실행한 후 여세요.
-6. 클론이 끝나면 **Open**을 선택하고, 저장소와 퍼실리테이터를 알고 있는 경우에만 **Trust**를 선택하세요.
-7. 파일 편집을 시작하기 전에 기술 리드가 워크샵 활동용 브랜치를 만들 수 있습니다. `workshop/<team-name>`과 같은 이름을 사용하세요.
+6. 명령 팔레트를 열고 [https://github.com/jeongaelee/hve-innovation-kr](https://github.com/jeongaelee/hve-innovation-kr)에 대해 **Git: Clone**을 실행한 후 여세요.
+7. 클론이 끝나면 **Open**을 선택하고, 저장소와 퍼실리테이터를 알고 있는 경우에만 **Trust**를 선택하세요.
+8. 파일 편집을 시작하기 전에 기술 리드가 워크샵 활동용 브랜치를 만들 수 있습니다. `workshop/<team-name>`과 같은 이름을 사용하세요.
 
 환경에서 Foundry 로컬 모델을 사용할 수 있다면 로컬 추론에 이를 선택할 수 있습니다. 그렇지 않다면 비용 효율적인 옵션으로 GitHub Copilot Chat에서 `MAI-Code-1-Flash`를 선택하세요. Microsoft Foundry Toolkit을 사용한 로컬 모델 설정 방법은
 [https://devblogs.microsoft.com/foundry/ai-assisted-development-powered-by-local-models/](https://devblogs.microsoft.com/foundry/ai-assisted-development-powered-by-local-models/)를 참고하세요.
