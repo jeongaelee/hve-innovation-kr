@@ -45,7 +45,7 @@ estimated_reading_time: 8
    설치하세요.
 2. Node.js, mermaid-cli 를 설치하세요. (윈도우 명령 프롬프트를 열고 아래 명령을 통해서 설치하세요)
         
-     winget install OpenJS.NodeJS.LTS
+     winget install OpenJS.NodeJS.LTS     
      npm install –g @mermaid-js/mermaid-cli
 4. VS Code를 열고 확장 보기를 열어 **GitHub Copilot**과 **GitHub Copilot Chat**을 설치하세요.
 5. Copilot 접근 권한이 있는 GitHub 계정으로 로그인하세요.
