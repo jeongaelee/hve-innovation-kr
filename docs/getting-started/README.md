@@ -100,3 +100,6 @@ HVE Core에는 프로젝트에 복사해 사용할 수 있는 유틸리티 스�
 *🤖 Crafted with precision by ✨Copilot following brilliant human instruction,
 then carefully refined by our team of discerning human reviewers.*
 <!-- markdownlint-enable MD036 -->
+
+## 다음 단계
+워크샵 개요 페이지에서 워크샵을 시작하세요: [워크샵 개요](../workshop/README.md)

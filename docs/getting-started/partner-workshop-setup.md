@@ -19,7 +19,7 @@ estimated_reading_time: 8
 | 단계 | 활동                                                                                       | 시간   |
 |------|-------------------------------------------------------------------------------------------|-------|
 | 1    | [워크샵 개요](partner-workshop.md)                                                     | 30분 |
-| 2    | [**로컬 VS Code 설정**](partner-workshop-setup.md)                                            | 30분 |
+| 2    | [**워크샵 환경 설정(로컬 VS Code)**](partner-workshop-setup.md)                                            | 30분 |
 | 3-1    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
 | 3-2    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
 | 4    | [검증 및 솔루션](partner-workshop-solution.md)                                             | 30분 |
