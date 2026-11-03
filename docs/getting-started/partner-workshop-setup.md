@@ -70,6 +70,11 @@ macOS에서는 동일한 메뉴와 버튼을 사용하세요. Windows에서 `Ctr
 ```text
 Review the repository and identify the most relevant HVE Core assets for a partner workshop scenario. Summarize the likely workflow, likely agents, and any prerequisites before the team begins the role exercises.
 ```
+한글 프롬프트:
+```text
+Repository를 검토하고, partner workshop 시나리오에 가장 적합한 "HVE Core assets"를 식별하세요.
+팀이 역할 실습(role exercises)을 시작하기 전에, 예상되는 워크플로우, 활용할 가능성이 높은 에이전트, 그리고 필요한 사전 요구사항을 요약하세요.
+```
 
 예상한 에이전트가 보이지 않으면:
 
@@ -127,6 +132,16 @@ Select the /RPI Agent. Create the session context only.
 
 Session name: relationship-manager-fsi
 Topic: Relationship Manager Intelligence Assistant for FSI
+Evidence location: ./copilot-tracking/research/workshop-input
+Date: 2026-11-04
+```
+
+한글 프롬프트 예시:
+
+```text
+/RPI Agent를 선택하세요. session context만 생성하세요.
+Session name: relationship-manager-fsi
+Topic: FSI를 위한 Relationship Manager Intelligence Assistant
 Evidence location: ./copilot-tracking/research/workshop-input
 Date: 2026-11-04
 ```

@@ -64,6 +64,12 @@ contradictions, unsupported claims, and unowned risks. Do not implement or
 publish anything.
 ```
 
+한글 프롬프트:
+
+```text
+경로에 있는 제작 산출물 세트를 하나의 솔루션 팩으로 검토하세요. 컨텍스트의 사실과 결정사항부터 요구사항, 경험 요구, 아키텍처 구성 요소, 백로그 항목, 테스트, 출판 게이트까지 추적 가능 매트릭스를 구축하세요. 매트릭스를 `.copilot-tracking/details/` 경로에 저장하세요. 누락된 연결고리, 모순, 근거 없는 주장, 소유자가 없는 위험 요소를 신고해 주세요. 아무것도 구현하거나 배포하지 마세요.
+```
+
 실행 후 다음 단계를 완료하세요:
 
 1. `.copilot-tracking/details/` 아래에 매트릭스 초안을 기록하세요.

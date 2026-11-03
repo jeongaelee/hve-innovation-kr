@@ -155,6 +155,17 @@ in evidence, not marketing language. Save the output under
    Keep the scope to context discovery.
    ```
 
+   한글 프롬프트 예시:
+   ```text
+   /rpi-research
+   session-context=.copilot-tracking/research/[date]/[session-name]-session-context.md.
+   session context와 workshop-input에서 topic과 evidence root를 확인하세요.
+   제공된 scenario, policies, process notes 및 supporting materials를 조사하세요.
+   근거 자료를 바탕으로 비즈니스 사실, 영향을 받는 사용자, 비즈니스 규칙, 제약 사항, 알려진 실패 사례, AI 안전 장치, 미해결 질문, 그리고 신뢰할 수 있는 대안이나 반대 근거를 식별하세요.
+   날짜가 포함된 primary research artifact를 `.copilot-tracking/research/` 아래에 저장하세요.
+   범위는 context discovery로 제한하세요.
+   ```
+  
    로컬로 동기화되고 접근이 통제된 OneDrive 폴더를 사용하는 프로덕션 사례의 경우, 신뢰할 수 있는 증거 루트를 명시적으로 제공하세요:
 
    ```text
@@ -196,6 +207,17 @@ in evidence, not marketing language. Save the output under
    Create BRD draft in Korea under '.copilot-tracking/brd-sessions/'.
    ```
 
+   한글 프롬프트:
+   ```text   
+   /BRD Builder agent를 선택하세요.
+   Session context: .copilot-tracking/research/[date]/[session-name]-session-context.md
+   session context에서 topic을 확인한 다음, 해당 문서에 포함된 evidence references와 research artifact를 활용하세요.
+   비즈니스 문제, 영향을 받는 이해관계자, 측정 가능한 비즈니스 성과, 범위,non-goals, 비즈니스 규칙, 제약 사항, 리스크, 가정, 의존성, 미해결 질문을 포함하는 간결한 비즈니스 요구사항 개요를 작성하세요.
+   BRD 초안과 해당 session state를 .copilot-tracking/brd-sessions/ 아래에 저장하세요.
+   근거 자료로 확인된 사실, 가정, 그리고 제안된 의사결정을 명확하게 구분하세요. 고객 관련 사실, 정책 요구사항, 측정 지표 또는 구현 약속을 임의로 만들어내지 마세요.
+   문서에 인적 검토가 필요한 초안임을 표시하고, 비즈니스 성과를 명확하게 설명하는 데 도움이 되는 경우 검증 가능한 인수 기준을 포함하세요.
+    ```
+
    팀이 제품 동작, 사용자 요구, 기능 요구사항, 비기능 요구사항, 수락 기준이 필요할 때 **PRD Builder**를 사용하세요:
 
    ```text
@@ -214,8 +236,16 @@ in evidence, not marketing language. Save the output under
    for human review.
    Create PRD draft in Korea under '.copilot-tracking/prd-sessions/`.
    ```
-
+   
+   한글 프롬프트:
+   ```text
+   Select the /PRD Builder agent. Session context:
+   .copilot-tracking/research/[date]/[session-name]-session-context.md.
+   세션 맥락에서 주제를 읽은 후, 연구 산출물과 비즈니스 요구사항 참고문헌을 활용하세요. 간결한 제품 요구사항 개요를 작성하세요.
+   대상 사용자, 수행할 작업, 사용자 여정, 범위 내 및 범위 외 동작, 기능적 요구사항, 비기능적 요구사항, 데이터 및 AI 가드레일, 알려진 실패 사례, 접근성 요구사항, 성공 지표, 의존성, 테스트 가능한 수용 기준을 포함합니다. PRD 초안과 세션 상태를 `.copilot-tracking/prd-sessions/` 경로에 저장합니다. 근거 자료에 대한 인용이나 참고문헌을 보존하세요. 사실과 가정을 구분하세요.
+   결정과 열린 질문들. 고객 데이터, 정책 요구사항, 또는 근거 없는 기술적 세부사항을 임의로 생성하지 마세요. 해당 문서를 사람이 검토할 초안으로 표시하세요.
    운영 환경에서 사용할 참고 자료는 승인된 원본 경로 또는 관리되는 링크를 컨텍스트로 제공합니다. 승인된 환경에서 허용된 경우가 아니라면, 민감한 원본 내용을 리포지토리에 직접 붙여 넣거나 복사하지 마세요.
+   ```
 
 ### 결과물
 
@@ -252,17 +282,17 @@ in evidence, not marketing language. Save the output under
 
    예시 패턴:
 
-```text
-.copilot-tracking/dt/<project-name>/
-  user-research.md
-  journey-notes.md
-  experience-draft.md
-  screens/
-    home-screen-sketch.png
-    account-summary-wireframe.png
-  wireframes/
-    customer-conversation-prep.fig
-```
+   ```text
+   .copilot-tracking/dt/<project-name>/
+   user-research.md
+   journey-notes.md
+   experience-draft.md
+   screens/
+       home-screen-sketch.png
+       account-summary-wireframe.png
+   wireframes/
+       customer-conversation-prep.fig
+   ```
 
 3. 리서치 및 디자인 자료를 활용하여, 가정이 아닌 실제로 관찰된 사용자 요구를 바탕으로 디자인 의사결정을 
    내립니다. 
@@ -276,52 +306,76 @@ in evidence, not marketing language. Save the output under
 9. 첫 초안이 필요하다면 **UX UI Designer**에게 문제를 간단한 사용자 여정과 경험 개요로 전환하도록 요청하세요.
    `.copilot-tracking/research/` 아래의 컨텍스트 패키지를 선택하고GitHub Copilot Chat에서 다음 프롬프트를 사용하세요:
 
-```text
-Turn these notes into a simple user journey, experience outline, and key pain
-points for this scenario. Save the reviewed experience draft under
-`.copilot-tracking/dt/`.
-```
+   ```text
+   Turn these notes into a simple user journey, experience outline, and key pain
+   points for this scenario. Save the reviewed experience draft under
+   `.copilot-tracking/dt/`.
+   ```
 
-10. 팀에 안내된 대화가 필요하다면 **Design Thinking Coach**에게 기회를
-    구성하고 가정에 도전하도록 요청하세요. **DT Coach** Agent를 선택합니다.
+   한글 프롬프트:
+   ```text
+   이 노트들을 바탕으로 이 시나리오에 맞는 간단한 사용자 여정, 경험 개요, 그리고 주요 문제점(pain points)을 작성하세요. 검토한 경험 초안(experience draft)을 `.copilot-tracking/dt/` 폴더에 저장하세요.
+   ```
 
-```text
-Coach me through a short design thinking session for this scenario. Help me
-frame the problem, identify user needs, and define a focused opportunity area
-for the solution.
-```
+10. 팀에 안내된 대화가 필요하다면 **Design Thinking Coach**에게 기회를 구성하고 가정에 도전하도록 요청하세요. 
+   **DT Coach** Agent를 선택합니다.
+
+   ```text
+   Coach me through a short design thinking session for this scenario. Help me
+   frame the problem, identify user needs, and define a focused opportunity area
+   for the solution.
+   ```
+
+   한글 프롬프트:
+   ```text
+   이 시나리오를 바탕으로 짧은 디자인 씽킹 세션을 진행할 수 있도록 코치해 주세요. 문제를 명확히 정의하고, 사용자의 니즈를 파악한 다음, 솔루션이 집중해야 할 핵심 기회 영역을 구체화할 수 있도록 도와주세요.
+   ```
 
 11. 팀에 학습 지원이나 더 명확한 다음 단계가 필요하다면
     **Design Thinking Learning Tutor**에게 방법을 설명하고 메모를 간단한
     디자인 아티팩트로 전환하도록 도움을 요청하세요. **DT Learning Tutor** Agent를 선택합니다.
 
-```text
-Act as a Design Thinking Learning Tutor. Explain the next design thinking step
-for this scenario and help me turn my notes into an insight, opportunity
-statement, or user journey outline.
-```
+   ```text
+   Act as a Design Thinking Learning Tutor. Explain the next design thinking step
+   for this scenario and help me turn my notes into an insight, opportunity
+   statement, or user journey outline.
+   ```
+   
+   한글 프롬프트:
+   ```text
+   디자인 씽킹 학습 튜터 역할을 해주세요. 이 상황에서 다음 디자인 씽킹 단계를 설명해 주시고, 제 노트를 인사이트, 기회 진술서 또는 사용자 여정 개요로 바꾸는 데 도움을 주세요.
+   ```
 
 12. **Accessibility Planner**와 **Accessibility Reviewer**를 사용하여
     접근성 요구사항을 드러내고 초안의 공백을 검토하세요.
-   `.copilot-tracking/dt/` 아래의 경험 초안을 선택하고 Accessibility
+   `.copilot-tracking/dt/` 아래의 경험 초안(experience draft) 초안을 선택하고 Accessibility
    Planner에게 다음과 같이 프롬프트하세요:
 
-```text
-Review the experience draft under `.copilot-tracking/dt/` and identify
-accessibility requirements, user needs, follow-up questions for implementation,
-and updates to the draft.
-```
+   ```text
+   Review the experience draft under `.copilot-tracking/dt/` and identify
+   accessibility requirements, user needs, follow-up questions for implementation,
+   and updates to the draft.
+   ```
+
+   한글 프롬프트:
+   ```text
+   `.copilot-tracking/dt/` 아래의 경험 초안(experience draft)을 검토하고 접근성 요구사항, 사용자 요구사항, 구현을 위해 추가 확인이 필요한 질문, Draft에 반영해야할 업데이트 사항을 식별하세요.
+   ```
 
 13. **RAI Planner**와 **RAI Reviewer**를 사용하여 책임 있는 AI
     요구사항, 가드레일, 검토 결과를 포착하세요.
    `.copilot-tracking/dt/` 아래의 경험 초안을 선택하고 **RAI Planner**
    프롬프트를 사용하세요:
 
-```text
-Review the experience draft under `.copilot-tracking/dt/` and identify
-responsible AI requirements, potential harms, mitigation ideas, and updates to
-the draft.
-```
+   ```text
+   Review the experience draft under `.copilot-tracking/dt/` and identify
+   responsible AI requirements, potential harms, mitigation ideas, and updates to
+   the draft.
+   ```
+   한글 프롬프트:
+   ```text
+   `.copilot-tracking/dt/` 아래의 경험 초안(experience draft)을 검토하고 책임 있는 AI 요구사항, 잠재적 위험, 완화 아이디어, Draft에 반영해야할 업데이트 사항을 식별하세요.
+   ```
 
 14. 팀에서 Figma를 사용하는 경우, 사용자 경험 초안에 Figma 파일, 와이어프레임 및 
     디자인 산출물의 링크나 참조 정보를 포함합니다. 
@@ -371,12 +425,17 @@ Figma 계정이 필요합니다. 전체 작업 공간 구성 및 문제 해결 �
     `.copilot-tracking/dt/` 폴더에서 사용자 경험 초안을 선택한 다음, 
     UX UI Designer에게 다음과 같이 프롬프트하세요:
 
-```text
-How would end users benefit from Microsoft 365 Copilot integrated to this
-scenario? What research would I need to run to validate it? Update the
-experience
-draft under `.copilot-tracking/dt/`.
-```
+   ```text
+   How would end users benefit from Microsoft 365 Copilot integrated to this
+   scenario? What research would I need to run to validate it? Update the
+   experience
+   draft under `.copilot-tracking/dt/`.
+   ```
+   
+   한글 프롬프트:
+   ```text
+   Microsoft 365 Copilot이 이 시나리오에 통합되었을 때 최종 사용자가 얻을 수 있는 이점은 무엇인가요? 이를 검증하기 위해 어떤 연구가 필요할까요? `.copilot-tracking/dt/` 아래의 경험 초안(experience draft)을 업데이트하세요.
+   ```
 
 22. Microsoft Marketplace와 Microsoft 365 Copilot Agent Store에 게시할 수 있도록, 
     사용자 경험을 어떻게 패키징하고, 쉽게 검색·발견할 수 있게 하며, 
