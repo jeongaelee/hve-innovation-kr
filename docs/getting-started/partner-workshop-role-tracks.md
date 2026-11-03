@@ -372,10 +372,10 @@ Figma 계정이 필요합니다. 전체 작업 공간 구성 및 문제 해결 �
     UX UI Designer에게 다음과 같이 프롬프트하세요:
 
 ```text
-"How would end users benefit from Microsoft 365 Copilot integrated to this
+How would end users benefit from Microsoft 365 Copilot integrated to this
 scenario? What research would I need to run to validate it? Update the
 experience
-draft under `.copilot-tracking/dt/`."
+draft under `.copilot-tracking/dt/`.
 ```
 
 22. Microsoft Marketplace와 Microsoft 365 Copilot Agent Store에 게시할 수 있도록, 

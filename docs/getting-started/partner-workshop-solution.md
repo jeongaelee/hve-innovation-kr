@@ -53,7 +53,7 @@ estimated_reading_time: 8
 **RPI-Plan**을 선택하고 다음 프롬프트를 입력하세요:
 
 ```text
-"Review the production artifact set under `.copilot-tracking/research/`,
+Review the production artifact set under `.copilot-tracking/research/`,
 `.copilot-tracking/prd-sessions/`, `.copilot-tracking/dt/`,
 `.copilot-tracking/plans/`, `.copilot-tracking/details/`, and
 `.copilot-tracking/github-issues/` as one solution pack. Build a traceability
@@ -61,7 +61,7 @@ matrix from context facts and decisions to requirements, experience needs,
 architecture components, backlog items, tests, and publication gates. Save
 the matrix under `.copilot-tracking/details/`. Report missing links,
 contradictions, unsupported claims, and unowned risks. Do not implement or
-publish anything."
+publish anything.
 ```
 
 실행 후 다음 단계를 완료하세요:
