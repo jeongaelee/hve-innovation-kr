@@ -184,7 +184,7 @@ estimated_reading_time: 10
    사용자 경험 계층, 통합을 나타내는 아키텍처 이미지를 Mermaid
    다이어그램에서 만드세요.
 
-   Copilot 에서 relationship-manager-fsi-mvp-plan.md 파일을 프롬프트에 추가하세요.
+   Copilot 프롬프트에 relationship-manager-fsi-mvp-plan.md 파일을 추가하고 아래 프롬프트를 추가하세요.
 
    ```text
    이 솔루션의 Mermaid 다이어그램을 바탕으로 아키텍처 이미지를 생성해 주세요. 첫 번째 MVP를 위한 핵심 서비스, 데이터 소스, 사용자 경험 계층, 그리고 통합 요소들을 Azure 및 Copilot 스타일의 아이콘으로 표현해 주세요.
