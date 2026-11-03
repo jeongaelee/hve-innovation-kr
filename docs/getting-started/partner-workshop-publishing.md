@@ -21,11 +21,11 @@ estimated_reading_time: 16
 | 단계 | 활동                                                                                       | 시간   |
 |------|-------------------------------------------------------------------------------------------|-------|
 | 1    | [워크샵 개요](partner-workshop.md)                                                     | 30분 |
-| 2    | [**로컬 VS Code 설정**](partner-workshop-setup.md)                                            | 30분 |
+| 2    | [로컬 VS Code 설정](partner-workshop-setup.md)                                            | 30분 |
 | 3-1    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
 | 3-2    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
 | 4    | [검증 및 솔루션](partner-workshop-solution.md)                                             | 30분 |
-| 5    | [Microsoft Marketplace 및 Copilot Agent Store 준비](partner-workshop-publishing.md)       | 60분 |
+| 5    | [**Microsoft Marketplace 및 Copilot Agent Store 준비**](partner-workshop-publishing.md)       | 60분 |
 | 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                            | 30분 |
 
 ## 목표
