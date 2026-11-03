@@ -23,12 +23,12 @@ sidebar_position: 5
 | 단계 | 활동                                                                                       | 시간   |
 |------|-------------------------------------------------------------------------------------------|-------|
 | 1    | [워크샵 개요](partner-workshop.md)                                                     | 30분 |
-| 2    | [**로컬 VS Code 설정**](partner-workshop-setup.md)                                            | 30분 |
+| 2    | [로컬 VS Code 설정](partner-workshop-setup.md)                                            | 30분 |
 | 3-1    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
-| 3-2    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
+| 3-2    | [역할별 트랙 Part2: 백로그, 아키텍처 설계](partner-workshop-role-tracks-2.md)                 | 45분 |
 | 4    | [검증 및 솔루션](partner-workshop-solution.md)                                             | 30분 |
 | 5    | [Microsoft Marketplace 및 Copilot Agent Store 준비](partner-workshop-publishing.md)       | 60분 |
-| 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                            | 30분 |
+| 6    | [**구현 및 상용화로의 핸드오프**](partner-workshop-implementation.md)                            | 30분 |
 
 ## 워크샵에서 솔루션 구현으로
 
@@ -114,14 +114,13 @@ sidebar_position: 5
 다음 프롬프트를 사용하세요:
 
 ```text
-/rpi-implement Use the approved implementation plan and implement
-only the first approved P0 task in this new repository. Create the minimum
-project structure required by the plan, follow the repository instructions, and
-use the planned acceptance criteria and existing validation commands. Respect
-approved commercial decisions in the linked shared solution monetization plan
-where relevant to this task; do not implement proposed terms as approved rules.
-Record implementation evidence under .copilot-tracking/changes/. Do not
-implement deferred work or publication activities.
+/rpi-implement
+승인된 구현 계획을 활용하여, 이 새로운 리포지토리에서 승인된 첫 번째 P0 작업만 구현하십시오.
+계획에 필요한 최소한의 프로젝트 구조를 생성하고, 리포지토리 지침을 준수하며, 계획된 수용 기준(acceptance criteria)과 기존 검증 명령을 사용하십시오.
+이 작업과 관련된 경우, 연결된 공유 솔루션 수익화 계획에 명시된 승인된 상업적 결정을 준수하십시오.
+단, 제안된 조건들을 확정된 규칙으로 간주하여 구현하지는 마십시오.
+구현 증거는 .copilot-tracking/changes/ 경로에 기록하십시오.
+연기된 작업이나 배포 관련 활동은 구현하지 마십시오.
 ```
 
 첫 구현은 실행 가능하고 테스트 가능한 작업 범위를 만들어내야 합니다.
@@ -175,15 +174,13 @@ implement deferred work or publication activities.
 다음 프롬프트를 사용하세요:
 
 ```text
-/rpi-implement Use the approved implementation plan and implement
-only the first approved P0 task in this repository. Reuse existing components,
-follow current code and test conventions, and limit changes to the planned
-behavior. Respect approved commercial decisions in the linked shared solution
-monetization plan where relevant to this task; do not implement proposed terms
-as approved rules. Run the smallest existing validation commands that cover the
-change and record implementation evidence under
-.copilot-tracking/changes/.Do not implement deferred work or publication
-activities.
+/rpi-implement
+승인된 구현 계획을 활용하여, 본 저장소에서 승인된 첫 번째 P0 작업만 구현하십시오.
+기존 구성 요소를 재사용하고, 현재의 코드 및 테스트 관례를 준수하며, 변경 사항은 계획된 동작 범위 내로 제한하십시오.
+본 작업과 관련된 경우, 연결된 '공유 솔루션 수익화 계획'에 명시된 승인된 상업적 결정을 존중하십시오. 
+단, 제안된 조건들을 확정된 규칙으로 간주하여 구현하지는 마십시오.
+변경 사항을 검증할 수 있는 최소한의 기존 검증 명령을 실행하고, 구현 근거를 .copilot-tracking/changes/ 디렉토리에 기록하십시오.
+추후로 미뤄진 작업이나 배포 관련 활동은 구현하지 마십시오.
 ```
 
 워크샵이 다른 패턴을 제안했다는 이유만으로 동작하는 아키텍처를 교체하지
@@ -216,20 +213,17 @@ activities.
 다음 프롬프트를 사용하세요:
 
 ```text
-/rpi-review Review the completed implementation against:
+/rpi-review
+완료된 구현 사항을 다음 항목들과 대조하여 검토하십시오.
+- 승인된 구현 계획
+- 제품 요구사항 정의서(PRD) 및 해당 수용 기준(Acceptance Criteria)
+- (패키지 제한, 유료 액세스, 과금 등이 포함된 경우) 공유 솔루션 수익화 계획에서 승인된 상업적 결정 사항
+- 구현 변경 기록
+- 리포지토리의 기존 관례 및 검증 결과
 
-* the approved implementation plan
-* the PRD and its acceptance criteria
-* the shared solution monetization plan's approved commercial decisions,
-  where package limits, paid access or billing are in scope
-* the implementation changes record
-* the repository's existing conventions and validation results
-
-Confirm whether the first milestone delivers the intended user outcome. Identify
-functional gaps, regressions, security or privacy concerns, accessibility gaps,
-unsupported deviations, and follow-up work. Do not treat Marketplace, Agent
-Store, or production readiness as complete without their separate evidence and
-human approval.
+첫 번째 마일스톤이 의도한 사용자 성과를 제공하는지 확인하십시오.
+기능적 격차, 회귀(regression) 현상, 보안 또는 개인정보 보호 관련 우려 사항, 접근성 문제, 승인되지 않은 편차, 그리고 후속 작업이 필요한 부분을 파악하십시오.
+Marketplace, Agent Store 또는 운영 환경 배포 준비 상태는 별도의 증빙 자료와 담당자의 승인이 있기 전까지는 완료된 것으로 간주하지 마십시오.
 ```
 
 검토는 다음 질문에 답해야 합니다:
@@ -286,15 +280,10 @@ MVP 검토 후:
 사용하세요:
 
 ```text
-Review the Marketplace and Agent Store readiness artifacts under
-.copilot-tracking/details/ against the implemented and reviewed MVP evidence
-under .copilot-tracking/changes/. Include the shared solution monetization plan
-linked from those artifacts; reconcile commercial findings there rather than
-creating another price list. Identify which readiness gates (Product,
-Technical, Commercial, Partner Center, Governance, Companion Agent) are still
-open, verify current Microsoft guidance for anything version-sensitive, and list
-the accountable owner and next action for each open gate. Do not mark any gate
-ready without supporting evidence, and do not submit or publish anything.
+.copilot-tracking/details/ 디렉터리에 있는 마켓플레이스 및 에이전트 스토어 준비 상태 아티팩트를 .copilot-tracking/changes/ 디렉터리에 있는 구현 및 검토된 MVP 증거와 비교하여 검토합니다.
+해당 아티팩트에서 링크된 공유 솔루션 수익화 계획을 포함하고, 별도의 가격표를 작성하는 대신 해당 계획에서 상업적 결과를 조정합니다. 
+아직 해결되지 않은 준비 게이트(제품, 기술, 상업, 파트너 센터, 거버넌스, 컴패니언 에이전트)를 식별하고, 버전 관련 사항에 대한 최신 Microsoft 지침을 확인하고, 각 미해결 게이트에 대한 담당자와 다음 조치를 명시합니다.
+증거 없이 게이트를 준비 완료로 표시하거나, 어떤 내용도 제출 또는 게시하지 마십시오.
 ```
 
 게시 워크플로우는

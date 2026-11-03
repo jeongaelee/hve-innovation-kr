@@ -21,11 +21,11 @@ estimated_reading_time: 16
 | 단계 | 활동                                                                                       | 시간   |
 |------|-------------------------------------------------------------------------------------------|-------|
 | 1    | [워크샵 개요](partner-workshop.md)                                                     | 30분 |
-| 2    | [**로컬 VS Code 설정**](partner-workshop-setup.md)                                            | 30분 |
+| 2    | [로컬 VS Code 설정](partner-workshop-setup.md)                                            | 30분 |
 | 3-1    | [역할별 트랙 Part1: 계획/비전/경험](partner-workshop-role-tracks.md)                      | 45분 |
-| 3-2    | [역할별 트랙 Part2: 아키텍처 설계, 백로그](partner-workshop-role-tracks-2.md)                 | 45분 |
+| 3-2    | [역할별 트랙 Part2: 백로그, 아키텍처 설계](partner-workshop-role-tracks-2.md)                 | 45분 |
 | 4    | [검증 및 솔루션](partner-workshop-solution.md)                                             | 30분 |
-| 5    | [Microsoft Marketplace 및 Copilot Agent Store 준비](partner-workshop-publishing.md)       | 60분 |
+| 5    | [**Microsoft Marketplace 및 Copilot Agent Store 준비**](partner-workshop-publishing.md)       | 60분 |
 | 6    | [구현 및 상용화로의 핸드오프](partner-workshop-implementation.md)                            | 30분 |
 
 ## 목표
@@ -134,6 +134,24 @@ Record confirmed decisions, owners, evidence, and next actions in the canonical
 Marketplace plan under .copilot-tracking/details/.
 ```
 
+Microsoft Marketplace 프롬프트 한글 버전
+
+```text
+.copilot-tracking/ 폴더에 있는 BRD, PRD, 아키텍처 및 마켓플레이스 계획 관련 자료를 읽고, 이 애플리케이션/에이전트를 Marketplace 에 Transactable offer 로 등록할 수 있게 가이드 해 주세요.
+
+권장 사항:
+1. SaaS, Managed Application 또는 Azure Container
+2. 오퍼 배포 및 게시자 액세스 모델
+3. 가격 및 거래 방법
+    - 수익화 계획 (고정, 하이브리드, 사용량 기반)
+    - 가격 : 공개(Public), 비공개(Private)
+    - SMC/SMB 셀프 서비스 : 결제, 비용, 수익, 수수료, 세금
+4. 가장 빠르고 신뢰할 수 있는 준비 경로
+
+절충 사항과 장애물을 명시한 후, 모든 결정을 함께 확정하도록 요청하세요.
+확정된 결정, 담당자, 근거 및 다음 조치를 .copilot-tracking/details/ 폴더의 공식 마켓플레이스 계획에 기록하세요.
+```
+
 ### Microsoft 365 Copilot 에이전트 트랙
 
 **Copilot Agent Store Coach**를 선택하고 현재 에이전트 상태를 하나의
@@ -157,6 +175,21 @@ State the trade-offs and blockers, then ask me to confirm all decisions
 together.
 Record confirmed decisions, owners, evidence, and next actions in the canonical
 agent-store plan under .copilot-tracking/details/.
+```
+
+Marketplace - Copilot Agent Store 프롬프트 한글 버전
+
+```text
+.copilot-tracking/ 폴더에 있는 BRD, PRD, 아키텍처 및 마켓플레이스 계획 관련 자료를 읽고, 이 애플리케이션/에이전트를 Marketplace 에 Transactable offer 로 등록할 수 있게 가이드 해 주세요.
+
+권장 사항:
+1. 에이전트 유형 : Declarative agent, Custom engine agent, 그 외 지원되는 agent type
+2. 백엔드 바인딩, 인증 모델
+3. 라이선스, 권한 부여, 테넌트 배포 방식 (공유 수익 창출 계획 및 마켓플레이스 가격 책정과 연계하여 에이전트 및 백엔드 요금이 명확하고 포함된 사용량에 대한 이중 청구가 발생하지 않도록 함)
+4. 가장 빠르고 신뢰할 수 있는 준비 경로
+
+절충 사항과 장애 요인을 명시한 다음, 모든 결정을 함께 확정하도록 요청하십시오.
+확정된 결정, 담당자, 근거 및 다음 조치를 .copilot-tracking/details/ 폴더의 공식 에이전트 저장소 계획에 기록하십시오.
 ```
 
 > [!IMPORTANT]
@@ -185,10 +218,10 @@ Marketplace 오퍼를 구성하기 전에 이 단계를 완료하여 제품 매�
 **Microsoft Marketplace Coach**를 선택하고 다음을 붙여넣으세요:
 
 ```text
-Use ms-marketplace-publish's MVP commercialization decision mode to create or
-update our shared solution monetization plan from the BRD, PRD, architecture and
-publication decisions. Keep it concise for Product Manager review and link it
-from the Marketplace handoff. Planning only; do not publish.
+/Microsoft-Marketplace-Publishing 
+'MVP commercialization decision mode'를 활용하여, BRD, PRD, 아키텍처 및 게시 관련 결정 사항을 기반으로 공용 솔루션 수익화 계획을 수립하거나 업데이트하십시오.
+제품 관리자(PM)가 검토하기 좋도록 간결하게 작성하고, 마켓플레이스 핸드오프(handoff) 단계에서 해당 계획으로 연결되는 링크를 포함하십시오.
+계획 수립 단계이며, 실제 게시(publish)는 하지 마십시오.
 ```
 
 ### 에이전트 수익화 조정
@@ -207,10 +240,10 @@ from the Marketplace handoff. Planning only; do not publish.
 **Copilot Agent Store Coach**를 선택하고 다음을 붙여넣으세요:
 
 ```text
-Use copilot-agent-store-publish's monetization reconciliation workflow to update
-our existing shared solution monetization plan. Present the agent/backend charge
-breakdown and approval gaps for review, and link it from the Agent Store
-handoff. Planning only; do not publish.
+/copilot-agent-store-publish
+'Monetization reconciliation workflow'를 사용하여 기존 공유 솔루션 수익화 계획을 업데이트합니다.
+에이전트/백엔드 요금 내역 및 승인 차이를 검토를 위해 제시하고 에이전트 스토어 인계에서 링크합니다.
+계획 수립 전용이며 게시하지 마십시오.
 ```
 
 조정 후, 제품 매니저는
