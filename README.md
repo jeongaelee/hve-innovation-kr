@@ -137,6 +137,9 @@ Microsoft는 고객이 AI 지원 시스템을 개발할 때 윤리적이고 안�
 
 ---
 
+## 워크샵 시작
+[Hypervelocity Innovation 파트너 워크샵](docs/getting-started/partner-workshop.md)
+
 <!-- markdownlint-disable MD036 -->
 *🤖 Crafted with precision by ✨Copilot following brilliant human instruction,
 then carefully refined by our team of discerning human reviewers.*
