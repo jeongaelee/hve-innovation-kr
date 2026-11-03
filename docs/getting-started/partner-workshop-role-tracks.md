@@ -227,7 +227,7 @@ in evidence, not marketing language. Save the output under
 
 ### 목표
 
-비즈니스 컨텍스트를 명확한 사용자 경험과 문제에 대한 공유된 이해로 변환하세요.
+비즈니스 컨텍스트를 명확한 사용자 경험으로 구체화하고, 해결할 문제에 대한 공통된 이해를 만듭니다.
 
 ### 단계
 
@@ -277,18 +277,18 @@ in evidence, not marketing language. Save the output under
    `.copilot-tracking/research/` 아래의 컨텍스트 패키지를 선택하고GitHub Copilot Chat에서 다음 프롬프트를 사용하세요:
 
 ```text
-"Turn these notes into a simple user journey, experience outline, and key pain
+Turn these notes into a simple user journey, experience outline, and key pain
 points for this scenario. Save the reviewed experience draft under
-`.copilot-tracking/dt/`."
+`.copilot-tracking/dt/`.
 ```
 
 10. 팀에 안내된 대화가 필요하다면 **Design Thinking Coach**에게 기회를
     구성하고 가정에 도전하도록 요청하세요. **DT Coach** Agent를 선택합니다.
 
 ```text
-"Coach me through a short design thinking session for this scenario. Help me
+Coach me through a short design thinking session for this scenario. Help me
 frame the problem, identify user needs, and define a focused opportunity area
-for the solution."
+for the solution.
 ```
 
 11. 팀에 학습 지원이나 더 명확한 다음 단계가 필요하다면
@@ -296,9 +296,9 @@ for the solution."
     디자인 아티팩트로 전환하도록 도움을 요청하세요. **DT Learning Tutor** Agent를 선택합니다.
 
 ```text
-"Act as a Design Thinking Learning Tutor. Explain the next design thinking step
+Act as a Design Thinking Learning Tutor. Explain the next design thinking step
 for this scenario and help me turn my notes into an insight, opportunity
-statement, or user journey outline."
+statement, or user journey outline.
 ```
 
 12. **Accessibility Planner**와 **Accessibility Reviewer**를 사용하여
@@ -307,9 +307,9 @@ statement, or user journey outline."
    Planner에게 다음과 같이 프롬프트하세요:
 
 ```text
-"Review the experience draft under `.copilot-tracking/dt/` and identify
+Review the experience draft under `.copilot-tracking/dt/` and identify
 accessibility requirements, user needs, follow-up questions for implementation,
-and updates to the draft."
+and updates to the draft.
 ```
 
 13. **RAI Planner**와 **RAI Reviewer**를 사용하여 책임 있는 AI
@@ -318,9 +318,9 @@ and updates to the draft."
    프롬프트를 사용하세요:
 
 ```text
-"Review the experience draft under `.copilot-tracking/dt/` and identify
+Review the experience draft under `.copilot-tracking/dt/` and identify
 responsible AI requirements, potential harms, mitigation ideas, and updates to
-the draft."
+the draft.
 ```
 
 14. 팀에서 Figma를 사용하는 경우, 사용자 경험 초안에 Figma 파일, 와이어프레임 및 
