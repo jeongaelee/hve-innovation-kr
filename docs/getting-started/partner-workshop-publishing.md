@@ -224,7 +224,7 @@ Marketplace 오퍼를 구성하기 전에 이 단계를 완료하여 제품 매�
 계획 수립 단계이며, 실제 게시(publish)는 하지 마십시오.
 ```
 
-**(General) Agent**를 선택하고 다음을 붙여넣으세요 (Microsoft Marketplac Coach 에이전트가 없는 경우 선택):
+**(General) Agent**를 선택하고 다음을 붙여넣으세요. (Microsoft Marketplac Coach 에이전트가 없는 경우 선택)
 
 ```text
 .copilot-tracking/ 아래의 BRD, PRD, architecture, publication 및 Marketplace 관련 artifact를 검토하세요.
@@ -242,9 +242,11 @@ Marketplace 오퍼를 구성하기 전에 이 단계를 완료하여 제품 매�
   - Product Manager가 검토하고 결정해야 할 사항
 
 기존 BRD, PRD, Architecture 및 publication decision과 일관성을 유지하세요.
+
 결과는 승인된 최종 가격표가 아니라 Product Manager 검토를 위한 commercialization recommendation으로 작성하세요.
-결정되지 않은 가격이나 Marketplace 정책을 임의로 확정하지 말고 assumption / recommendation / decision required로 구분하세요.
-기존 Marketplace handoff 및 .copilot-tracking/의 관련 artifact와 연결하고, 필요한 경우 commercialization planning artifact를 업데이트하세요.
+  - 결정되지 않은 가격이나 Marketplace 정책을 임의로 확정하지 말고 assumption / recommendation / decision required로 구분하세요.
+  - 기존 Marketplace handoff 및 .copilot-tracking/의 관련 artifact와 연결하고, 필요한 경우 commercialization planning artifact를 업데이트하세요.
+
 본 작업은 계획 수립만을 위한 것입니다. 마켓플레이스 오퍼를 게시, 제출하거나 수정하지 마십시오.
 ```
 
@@ -268,6 +270,35 @@ Marketplace 오퍼를 구성하기 전에 이 단계를 완료하여 제품 매�
 'Monetization reconciliation workflow'를 사용하여 기존 공유 솔루션 수익화 계획을 업데이트합니다.
 에이전트/백엔드 요금 내역 및 승인 차이를 검토를 위해 제시하고 에이전트 스토어 인계에서 링크합니다.
 계획 수립 전용이며 게시하지 마십시오.
+```
+
+**(General) Agent**를 선택하고 다음을 붙여넣으세요. (Copilot Agent Store Coach 에이전트가 없는 경우 선택)
+
+```text
+.copilot-tracking/ 아래의 BRD, PRD, architecture, publication, Marketplace planning 및 기존 solution monetization 관련 artifact를 검토하세요.
+현재 솔루션의 Copilot Agent Store commercialization 및 monetization reconciliation을 검토하고, 기존 shared solution monetization plan을 생성하거나 업데이트하세요.
+특히 Microsoft Marketplace에서 제공되는 백엔드 솔루션과 Copilot Agent Store에서 제공되는 companion agent 사이에 중복 청구나 상충되는 라이선스 정책이 발생하지 않도록 하나의 일관된 고객 패키지로 조정하세요.
+다음 사항을 검토하고 명확히 정리하세요.
+  - 고객이 구매하는 전체 Solution Package와 그 안에서 Marketplace backend와 Copilot Agent Store agent가 담당하는 역할
+  - Marketplace backend의 가격 및 과금 모델
+  - Copilot Agent Store companion agent가 기존 backend 가격에 포함되는지 또는 별도 구매/라이선스가 필요한지
+  - Agent의 무료/유료 접근 정책 및 entitlement
+  - Backend 사용량 또는 포함된 리소스와 Agent 측 과금 간의 중복 청구 가능성
+  - Backend 또는 Marketplace entitlement를 Agent가 어떤 방식으로 확인 및 검증해야 하는지
+  - 기존 Marketplace commercialization plan에서 Agent Store 추가로 인해 변경해야 하는 항목과 변경하지 않아야 하는 항목
+  - Marketplace Track과 Copilot Agent Store Track 사이의 가격, 라이선스 및 entitlement dependency
+  - 아직 결정되지 않은 비용, 라이선스, entitlement, approval 및 정책 관련 gap
+  - Product Manager 및 Publishing 단계에서 검토 및 승인해야 할 결정사항
+기존 BRD, PRD, Architecture, Marketplace commercialization decision 및 publication decision과 일관성을 유지하세요.
+
+결과를 다음 세 가지로 명확하게 구분하세요.
+  - Confirmed: 기존 artifact에서 이미 결정된 사항
+  - Recommendation: 현재 정보를 기반으로 한 권장 사항
+  - Decision Required: Product Manager 또는 Publishing 단계에서 추가 결정이나 승인이 필요한 사항
+
+Marketplace와 Copilot Agent Store의 가격 또는 라이선스 정책을 임의로 가정하거나 확정하지 마세요. 근거가 없는 경우 Decision Required로 표시하세요.
+Agent/backend charge breakdown과 approval gaps를 포함하고, 기존 Agent Store handoff 및 Marketplace handoff와 연결하세요.
+결과를 .copilot-tracking/details/ 아래의 기존 solution-monetization-plan.md에 반영하세요. 기존 파일이 없다면 새로운 monetization planning artifact를 생성하세요.
 ```
 
 조정 후, 제품 매니저는
